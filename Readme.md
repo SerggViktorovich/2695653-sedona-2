@@ -2,7 +2,7 @@
 
 * Студент: [Сергей Проценко](https://up.htmlacademy.ru/htmlcss-individual/2/user/2695653).
 * Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
-
+* Сайт: [Мой проект СЕДОНА](https://serggviktorovich.github.io/2695653-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
