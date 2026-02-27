@@ -8,94 +8,98 @@
 
 <body>
     <!-- Шапка -->
-    <header>
-        <div class="header-container">
-            <img src="logo.png" alt="Логотип Седона" class="logo">
+    <header class="main-header">
+        <div class="container">
+            <!-- логотип в шапке слева-->
+            <a><img src="logo.png" alt="Логотип Седона" class="logo"></a>
+            <!-- Навигация шапки слева-->
             <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#">Главная</a></li>
                     <li class="nav-item"><a href="#">О Седоне</a></li>
                     <li class="nav-item"><a href="#">Гостиницы</a></li>
                 </ul>
-            </nav>
-            <div class="header-right">
+            
+            <!-- список навигации шапки справа-->
                 <ul class="list-right">
-                    <li class="item-right"><a href="#" class="searh visually-hidden">ПОИСК</a></li>
-                    <li class="item-right"><a href="#" class="favorites visually-hidden">ИЗБРАННОЕ</a></li>
-                    <li class="item-right"><a href="#" class="button">ХОЧУ СЮДА</a></li>
+                    <li class="item-right"><a href="#" class="searh visually-hidden">поиск</a></li>
+                    <li class="item-right"><a href="#" class="favorites visually-hidden">избранное</a></li>
+                    <li class="item-right"><a href="#" class="button">хочу сюда</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
     <!-- Баннер -->
     <section class="banner">
-        <img src="sedona-banner.jpg" alt="Баннер ДОБРО пожаловать в великолепную СЕДОНУ">
+        <img src="sedona-banner.jpg" alt="баннер добро пожаловать в великолепную седону">
     </section>
 
     <!-- Описание Седоны -->
     <section class="description">
-        <h2>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        <h2>седона — небольшой городок в арризоне, заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-    </section>
+    
 
     <!-- Причины посетить Седону -->
-    <section class="reasons">
-        <div class="reason-item">
-            <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+    <ul class="reasons-list">
+        <li class="reason-item">
+            <h3>настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="sedona-banner1.png" alt="уютный район седоны">
-        </div>
+        </li>
 
-        <div class="reason-item">
-            <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+        <li class="reason-item">
+            <h3>небольшая площадь</h3>
             <p>Все достопримечательности находятся очень близко</p>
-        </div>
-        <div class="reason-item">
-            <h3>КРАСИВАЯ ДОРОГА</h3>
+        </li>
+        <li class="reason-item">
+            <h3>красивая дорога</h3>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="reason-item">
-            <h3>МАЛО ТУРИСТОВ</h3>
+        </li>
+        <li class="reason-item">
+            <h3>мало туристов</h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
-        <div class="reason-item">
-            <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+        </li>
+        <li class="reason-item">
+            <h3>там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="sedona-banner2.png" alt="на фото изображен каньон">
-        </div>
+        </li>
+    </ul>
     </section>
 
     <!-- Комфорт и уют -->
     <section class="comfort">
-        <h2>ПРИЕЗЖАЙТЕ В СЕДОНУ ОТДОХНУТЬ В КОМФОРТЕ И УЮТЕ!</h2>
+        <h2>приезжайте в седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
-    </section>
+    
 
     <!-- Услуги -->
-    <section class="services">
-        <div class="service-item">
+    <ul class="services">
+        <li class="service-item">
             <img src="housing.png" alt="Жильё">
             <h3>ЖИЛЬЁ</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </div>
-        <div class="service-item">
+            </li>
+        
+        <li class="service-item">
             <img src="food.png" alt="Еда">
-            <h3>ЕДА</h3>
+            <h3>еда</h3>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-        <div class="service-item">
+        </li>
+        <li class="service-item">
             <img src="souvenirs.png" alt="Сувениры">
-            <h3>СУВЕНИРЫ</h3>
+            <h3>сувениры</h3>
             <p>Не только китайского, но и настоящего местного производства!</p>
-        </div>
+        </li>
     </section>
 
     <!-- Форма поиска гостиниц -->
     <section class="search-hotels">
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <h2>заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button type="button">поиск гостиницы в седоне</button>
     </section>
 
     <!-- Рассылка -->
@@ -105,26 +109,24 @@
         <img src="subscribe.png" class="subscribe-section" alt="Подписаться на рассылку">
         <form>
             <input type="email" placeholder="Ваш e-mail">
-            <button>ПОДПИСАТЬСЯ</button>
+            <button type="button">подписаться</button>
         </form>
     </section>
 
     <!-- Футер -->
     <footer>
-        <div class="footer-container">
-            <div class="social-media">
+        <ul class="footer-container">
+            <li class="social-media">
                 <a href="#"><img src="vk.png" alt="VK"></a>
                 <a href="#"><img src="tg.png" alt="Telegram"></a>
-            </div>
-            <div class="contact">
-                <p>+7 (812) 812-12-12</p>
-            </div>
-            <div class="copyright">
-                <a href="#"><img src="htmlacademylogo.png" alt="логотип HTML ACADEMY"></a>
-                <!-- ИЛИ ТАК? -->
-                <p>&copy; htmlacademy</p>
-            </div>
-        </div>
+            </li>
+            <li class="contact">
+               <a href="tel:+88121212">+7 (812) 812-12-12</a>
+            </li>
+            <li class="copyright">
+                <a href="#"><img src="htmlacademylogo.png" alt="логотип html academy"></a>
+            </li>
+        </ul>
     </footer>
 </body>
 
