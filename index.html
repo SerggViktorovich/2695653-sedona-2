@@ -8,32 +8,50 @@
 
 <body>
     <!-- Шапка -->
-    <header class="main-header">
-        <div class="container">
+    <header class="page-header">
+        
             <!-- логотип в шапке слева-->
             <a><img src="logo.png" alt="Логотип Седона" class="logo"></a>
             <!-- Навигация шапки слева-->
-            <nav class="header-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Главная</a></li>
-                    <li class="nav-item"><a href="#">О Седоне</a></li>
-                    <li class="nav-item"><a href="#">Гостиницы</a></li>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#" >Главная</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">О Седоне</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Гостиницы</a>
+                    </li>
                 </ul>
             
+            
             <!-- список навигации шапки справа-->
-                <ul class="list-right">
-                    <li class="item-right"><a href="#" class="searh visually-hidden">поиск</a></li>
-                    <li class="item-right"><a href="#" class="favorites visually-hidden">избранное</a></li>
-                    <li class="item-right"><a href="#" class="button">хочу сюда</a></li>
+                <ul class="navigation-list navigation-user">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">
+                          <span class="visually-hidden">поиск</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">
+                            <span class="visually-hidden">избранное</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#" class="button">хочу сюда</a>
+                    </li>
                 </ul>
             </nav>
-        </div>
+        
     </header>
-
+<!--разметка основной страницы-->
+<main class="main-index">
     <!-- Баннер -->
-    <section class="banner">
-        <img src="sedona-banner.jpg" alt="баннер добро пожаловать в великолепную седону">
-    </section>
+    <h1 class="visually-hidden">добро пожаловать в седону</h1>
+        <img class="logo" src="" alt="баннер седона">
+   
 
     <!-- Описание Седоны -->
     <section class="description">
@@ -44,26 +62,26 @@
     <!-- Причины посетить Седону -->
     <ul class="reasons-list">
         <li class="reason-item">
-            <h3>настоящий городок</h3>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <h3 class="reason-title">настоящий городок</h3>
+            <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="sedona-banner1.png" alt="уютный район седоны">
         </li>
 
         <li class="reason-item">
-            <h3>небольшая площадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
+            <h3 class="reason-title">небольшая площадь</h3>
+            <p class="reason-description">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="reason-item">
-            <h3>красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="reason-title">красивая дорога</h3>
+            <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="reason-item">
-            <h3>мало туристов</h3>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <h3 class="reason-title">мало туристов</h3>
+            <p class="reason-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="reason-item">
-            <h3>там есть мост дьявола</h3>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="reason-title">там есть мост дьявола</h3>
+            <p class="reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="sedona-banner2.png" alt="на фото изображен каньон">
         </li>
     </ul>
@@ -71,7 +89,7 @@
 
     <!-- Комфорт и уют -->
     <section class="comfort">
-        <h2>приезжайте в седону отдохнуть в комфорте и уюте!</h2>
+        <h3>приезжайте в седону отдохнуть в комфорте и уюте!</h3>
         <p>Опытный персонал и качественное обслуживание!</p>
     
 
@@ -98,14 +116,14 @@
 
     <!-- Форма поиска гостиниц -->
     <section class="search-hotels">
-        <h2>заинтересовались?</h2>
+        <h3>заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button">поиск гостиницы в седоне</button>
     </section>
 
     <!-- Рассылка -->
     <section class="newsletter">
-        <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <h3>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <img src="subscribe.png" class="subscribe-section" alt="Подписаться на рассылку">
         <form>
@@ -113,18 +131,37 @@
             <button type="button">подписаться</button>
         </form>
     </section>
+    </main>
 
     <!-- Футер -->
-    <footer>
-        <section class="social">
-                <a href="#"><img src="vk.png" alt="VK"> <span class="visually-hidden">ВКонтакте</span></a>
-                <a href="#"><img src="tg.png" alt="Telegram"> <span class="visually-hidden">телеграм</span></a>
-                <a href="#"><img src="youtube.png" alt="youtube"> <span class="visually-hidden">youtube</span></a>
-               <a href="tel:+88121212" class="contact">+7 (812) 812-12-12</a>
-               </section>
-               <div>
+    <footer class="page-footer">
+       <ul class="footer-social-list">
+          <li class="footer-social-item">
+                <a class="button"  href="#"> 
+                    <img src="vk.png" alt="vk"> 
+                    <span class="visually-hidden">ВКонтакте</span>
+                </a>
+         </li> 
+                      <li class="footer-social-item">
+                <a class="button"  href="#"> 
+                    <img src="tg.png" alt="tg"> 
+                    <span class="visually-hidden">телеграмм</span>
+                </a>
+         </li> 
+        <li class="footer-social-item">
+            <a class="button"  href="#"> 
+               <img src="youtube.png" alt="youtube"> 
+                 <span class="visually-hidden">youtube</span>
+            </a>
+                    </li> 
+         </ul>
+         <div class="footer-contact">
+               <a href="tel:+88121212" class="contact">+7 (812) 812-12-12</a> 
+               </div>    
+               <p>
                 <a href="#"><img src="htmlacademylogo.png" alt="логотип html academy" class="copyright"></a>
-              </div>
+            </p>
+              
     </footer>
 </body>
 
