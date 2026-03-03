@@ -73,20 +73,34 @@ catalog.html
                         <legend>Инфраструктура:</legend>
                         <label><input type="checkbox" checked> Бассейн</label>
                         <label><input type="checkbox" checked> Парковка</label>
-                        <label><input type="checkbox" checked> Wi-Fi</label>
+                        <label><input type="checkbox"> Wi-Fi</label>
                     </fieldset>
 
                     <!-- Тип жилья -->
-                    <fieldset class="filter-group">
-                        <legend>Тип жилья:</legend>
+                    <fieldset class="filter-search-group">
+                        <legend class="filter-search-title">Тип жилья:</legend>
                         <label><input type="radio" name="housing" checked> Гостиница</label>
                         <label><input type="radio" name="housing"> Мотель</label>
                         <label><input type="radio" name="housing"> Апартаменты</label>
                     </fieldset>
-                     </fieldset>
+                      <!-- Стоимость -->
+                    <fieldset class="filter-group-price">
+                        <legend class="filter-search-price">Стоимость, ₽:</legend>
+                        <input type="number" placeholder="От" min="0">
+                        <input type="number" placeholder="До" max="9000">
+                        <button type="submit">ПРИМЕНИТЬ</button>
+                        <button type="reset">СБРОСИТЬ</button>
                 </form>
             </section>
         </div>
+         <!-- Список гостиниц -->
+        <section class="hotels-list">
+            <div class="container">
+                <h2 class="section-title">НАЙДЕНО ГОСТИНИЦ: 38</h2>
+                <select class="sort-select">
+                    <option>Сначала дешёвые</option>
+                </select>
+                </div>
     
 </body>
 </html>
