@@ -47,21 +47,46 @@ catalog.html
         
     </header>
 
-    <main class="inner-main">
-<header class="inner-header">
-    <h1 class="inner-header-title">гостиницы седоны</h1>
-    <ul class="breadcrumbs">
-    <li class="breadcrumbs-item">
-        <a href="index.html" class="breadcrumbs-link">
-            <img src="index.png"  alt="#">
-            <span class="visually-hidden">главная</span>
-        </a>
-        </li>
-        <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">гостиницы</a>
-        </li>
-  </ul>
-    </main>
+    <main>
+        <!-- Заголовок страницы -->
+      <section class="filter">
+        <h1 class="filter-title">Гостиницы Седоны</h1>
+       <!-- Хлебные крошки -->
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+
+    <!-- Блок фильтров -->
+        <div class="filters-div">
+            <section class="filters container">
+                <h2 class="section-title visually-hidden">Фильтры</h2>
+                <!-- Инфраструктура -->
+                <form class="filter-form">
+                    <fieldset class="filter-group">
+                        <legend>Инфраструктура:</legend>
+                        <label><input type="checkbox" checked> Бассейн</label>
+                        <label><input type="checkbox" checked> Парковка</label>
+                        <label><input type="checkbox" checked> Wi-Fi</label>
+                    </fieldset>
+
+                    <!-- Тип жилья -->
+                    <fieldset class="filter-group">
+                        <legend>Тип жилья:</legend>
+                        <label><input type="radio" name="housing" checked> Гостиница</label>
+                        <label><input type="radio" name="housing"> Мотель</label>
+                        <label><input type="radio" name="housing"> Апартаменты</label>
+                    </fieldset>
+                     </fieldset>
+                </form>
+            </section>
+        </div>
     
 </body>
 </html>
