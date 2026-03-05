@@ -70,37 +70,103 @@ catalog.html
                 <!-- Инфраструктура -->
                 <form class="filter-form">
                     <fieldset class="filter-group">
-                        <legend>Инфраструктура:</legend>
-                        <label><input type="checkbox" checked> Бассейн</label>
-                        <label><input type="checkbox" checked> Парковка</label>
-                        <label><input type="checkbox"> Wi-Fi</label>
+                        <legend class="infrastructure-item">Инфраструктура:</legend>
+                        <label class="infrastructure-list"><input type="checkbox" checked> Бассейн</label>
+                        <label class="infrastructure-list"><input type="checkbox" checked> Парковка</label>
+                        <label class="infrastructure-list"><input type="checkbox"> Wi-Fi</label>
                     </fieldset>
 
                     <!-- Тип жилья -->
                     <fieldset class="filter-search-group">
                         <legend class="filter-search-title">Тип жилья:</legend>
-                        <label><input type="radio" name="housing" checked> Гостиница</label>
-                        <label><input type="radio" name="housing"> Мотель</label>
-                        <label><input type="radio" name="housing"> Апартаменты</label>
+                        <label class="housing-list"><input type="radio" name="housing" checked> Гостиница</label>
+                        <label class="housing-list"><input type="radio" name="housing"> Мотель</label>
+                        <label class="housing-list"><input type="radio" name="housing"> Апартаменты</label>
                     </fieldset>
                       <!-- Стоимость -->
-                    <fieldset class="filter-group-price">
-                        <legend class="filter-search-price">Стоимость, ₽:</legend>
-                        <input type="number" placeholder="От" min="0">
-                        <input type="number" placeholder="До" max="9000">
-                        <button type="submit">ПРИМЕНИТЬ</button>
-                        <button type="reset">СБРОСИТЬ</button>
+
+                 <fieldset class="price-group">
+                    <legend class="group-legend">Стоимость, ₽:</legend>
+                    <input type="number" class="price-input" placeholder="От" min="0">
+                    <input type="number" class="price-input" placeholder="До" max="9000">
+                    <button type="submit" class="apply-filters-btn">ПРИМЕНИТЬ</button>
+                    <button type="reset" class="reset-filters-btn">СБРОСИТЬ</button>
+                </fieldset>
                 </form>
             </section>
         </div>
-         <!-- Список гостиниц -->
-        <section class="hotels-list">
-            <div class="container">
-                <h2 class="section-title">НАЙДЕНО ГОСТИНИЦ: 38</h2>
-                <select class="sort-select">
-                    <option>Сначала дешёвые</option>
+          <!-- Список гостиниц -->
+        <section class="hotels-section">
+            <div class="hotels-container">
+                <h2 class="results-count">НАЙДЕНО ГОСТИНИЦ: 38</h2>
+                <select class="sort-dropdown">
+                    <option value="price-asc">Сначала дешёвые</option>
+                    <option value="price-desc">Сначала дорогие</option>
+                    <option value="rating">По рейтингу</option>
                 </select>
-                </div>
+
+                <!-- Сетка карточек гостиниц -->
+                <ul class="hotels-grid">
+                    <!-- Карточка 1 -->
+                    <li class="hotel-card">
+                        <img src="#" alt="Amara Resort & Spa" class="hotel-image">
+                        <div class="hotel-details">
+                            <h3 class="hotel-name">Amara Resort & Spa</h3>
+                            <p class="hotel-category">Гостиница</p>
+                            <dl class="hotel-features">
+                                <dt class="feature-label">Цена:</dt><dd class="feature-value">От 4000 ₽</dd>
+                                <dt class="feature-label">Рейтинг:</dt><dd class="feature-value">8.5</dd>
+                            </dl>
+                            <button class="details-button">ПОДРОБНЕЕ</button>
+                            <button class="favorites-button">В ИЗБРАННОЕ</button>
+                        </div>
+                    </li>
+
+                    <!-- Карточка 2 -->
+                    <li class="hotel-card">
+                        <img src="#" alt="Villas at Poco Diablo" class="hotel-image">
+                        <div class="hotel-details">
+                            <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                            <p class="hotel-category">Гостиница</p>
+                            <dl class="hotel-features">
+                                <dt class="feature-label">Цена:</dt><dd class="feature-value">От 5000 ₽</dd>
+                                <dt class="feature-label">Рейтинг:</dt><dd class="feature-value">9.2</dd>
+                            </dl>
+                            <button class="details-button">ПОДРОБНЕЕ</button>
+                            <button class="favorites-button">В ИЗБРАННОЕ</button>
+                        </div>
+                    </li>
+
+                    <!-- Карточка 3 -->
+                    <li class="hotel-card">
+                        <img src="#" alt="Desert Quail Inn" class="hotel-image">
+                        <div class="hotel-details">
+                            <h3 class="hotel-name">Desert Quail Inn</h3>
+                            <p class="hotel-category">Гостиница</p>
+                            <dl class="hotel-features">
+                                <dt class="feature-label">Цена:</dt><dd class="feature-value">От 2500 ₽</dd>
+                                <dt class="feature-label">Рейтинг:</dt><dd class="feature-value">6.9</dd>
+                            </dl>
+                            <button class="details-button">ПОДРОБНЕЕ</button>
+                            <button class="favorites-button">В ИЗБРАННОЕ</button>
+                        </div>
+                    </li>
+
+                    <!-- Карточка 4 -->
+                    <li class="hotel-card">
+                        <img src="#" alt="GreenTree Inn" class="hotel-image">
+                        <div class="hotel-details">
+                            <h3 class="hotel-name">GreenTree Inn</h3>
+                            <p class="hotel-category">Гостиница</p>
+                            <dl class="hotel-features">
+                                <dt class="feature-label">Цена:</dt><dd class="feature-value">От 1500 ₽</dd>
+                                <dt class="feature-label">Рейтинг:</dt><dd class="feature-value">5.0</dd>
+                            </dl>
+                            <button class="details-button">ПОДРОБНЕЕ</button>
+                            <button class="favorites-button">В ИЗБРАННОЕ</button>
+                        </div>
+                    </li>
+                </ul>
     
 </body>
 </html>
