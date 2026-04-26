@@ -1396,8 +1396,8 @@ img {
 
 .subscription-input-email:disabled,
 .subscription-input-email:disabled:hover {
-  background-color: #f2f2f2;
-  opacity: 30%;
+  background-color: rgba(242, 242, 242,.3);
+  
 }
 
 .subscription-button {
